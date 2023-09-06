@@ -1,12 +1,15 @@
 {
 	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
+	"version": "1.1.1-change.150",
 	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
 	"main": "main.js",
 	"scripts": {
-		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
+		"build": "node scripts/esbuild.config.mjs production",
+		"bump-version": "node scripts/version-bump.mjs && git add manifest.json versions.json"
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/zoodogood/obsidian-plugin-markdown-tabs"
 	},
 	"keywords": [],
 	"author": "",
@@ -19,6 +22,13 @@
 		"esbuild": "0.17.3",
 		"obsidian": "latest",
 		"tslib": "2.4.0",
-		"typescript": "4.7.4"
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@vanilla-extract/css": "^1.13.0",
+		"@vanilla-extract/esbuild-plugin": "^2.3.0",
+		"@zoodogood/utils": "^1.0.2-3",
+		"preact": "^10.17.1",
+		"ts-node": "^10.9.1"
 	}
 }
