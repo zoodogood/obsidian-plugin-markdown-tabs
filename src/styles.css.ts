@@ -28,6 +28,7 @@ globalStyle(`${scopedParent} .${TABS_SELECT_LIST}`, {
 	display: "flex",
 	listStyle: "none",
 	padding: 0,
+	margin: 0,
 	overflow: "auto",
 	userSelect: "none",
 });
