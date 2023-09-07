@@ -27,7 +27,7 @@ globalStyle(`${scopedParent} .${COMPONENT_HEADER}`, {
 globalStyle(`${scopedParent} .${TABS_SELECT_LIST}`, {
 	display: "flex",
 	listStyle: "none",
-	padding: 0,
+	padding: "0 !important",
 	margin: 0,
 	overflow: "auto",
 	userSelect: "none",
