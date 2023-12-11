@@ -1,6 +1,7 @@
 Hey, it's Plugin Markdown Tabs Syntax for Obsidian
 
-
+> [!WARNING]  
+> Deprecated: Use https://github.com/ptournet/obsidian-html-tabs instead
 
 
 ##### General syntax:
